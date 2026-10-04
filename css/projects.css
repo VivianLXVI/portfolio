@@ -1,0 +1,216 @@
+/* =========================================================
+   projects.css — project entries, NDA notices, expandable details
+========================================================= */
+
+.project {
+  border-top: 1px solid var(--line);
+  padding: 2.4rem 0;
+}
+
+.project:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.project-main {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 2.5rem;
+}
+
+.meta {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: .72rem;
+  line-height: 1.7;
+}
+
+.meta b {
+  display: block;
+  margin-bottom: .15rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.project-content h3 {
+  margin: 0 0 .45rem;
+  font-family: var(--display);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  line-height: 1.1;
+  letter-spacing: -.035em;
+}
+
+.result {
+  margin: 0 0 1rem;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: .78rem;
+  font-weight: 600;
+}
+
+.project-content > p:not(.result):not(.nda-note) {
+  max-width: 700px;
+  color: var(--muted);
+}
+
+.project ul {
+  max-width: 760px;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.project li { margin-bottom: .45rem; }
+
+/* ---------- TAGS ---------- */
+
+.tags {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: .4rem;
+  padding: 0 !important;
+  list-style: none;
+  margin: 1.2rem 0 0 !important;
+}
+
+.tags li {
+  margin: 0;
+  padding: .25rem .55rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--muted);
+  background: var(--surface-2);
+  font-family: var(--mono);
+  font-size: .67rem;
+}
+
+/* ---------- NDA BADGE + NOTICE ---------- */
+
+.badge-nda {
+  display: inline-block;
+  margin-left: .6rem;
+  padding: .18rem .5rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  font-family: var(--mono);
+  font-size: .62rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  vertical-align: middle;
+}
+
+.nda-note {
+  max-width: 700px;
+  margin: 1.2rem 0 0;
+  padding: .8rem 1rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  background: var(--accent-soft);
+  color: var(--ink);
+  font-size: .85rem;
+}
+
+.nda-note b { font-family: var(--mono); font-size: .75rem; }
+
+/* ---------- PROJECT LINKS ---------- */
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.1rem;
+  margin: 1.1rem 0 0;
+  font-family: var(--mono);
+  font-size: .72rem;
+}
+
+.project-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-links a:hover { text-decoration: underline; }
+
+.project-links .link-note { color: var(--muted); }
+
+/* ---------- EXPANDABLE DETAILS ---------- */
+
+.details-toggle {
+  margin-top: 1.3rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  border: 0;
+  padding: 0;
+  color: var(--accent);
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.details-toggle::before {
+  content: "+";
+  display: inline-grid;
+  place-items: center;
+  width: 17px;
+  height: 17px;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  font-size: .8rem;
+}
+
+.details-toggle.open::before { content: "−"; }
+
+.project-details {
+  display: none;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+}
+
+.project-details.open { display: block; }
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem 2rem;
+}
+
+.detail-block.wide { grid-column: 1 / -1; }
+
+.detail-block h4 {
+  margin: 0 0 .45rem;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: .73rem;
+}
+
+.detail-block p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.detail-block ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: .9rem;
+}
+
+.detail-block li { margin-bottom: .3rem; }
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 850px) {
+  .project-main { grid-template-columns: 1fr; gap: .8rem; }
+}
+
+@media (max-width: 600px) {
+  .detail-grid { grid-template-columns: 1fr; }
+  .detail-block.wide { grid-column: auto; }
+}

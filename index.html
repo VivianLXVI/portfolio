@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vivianahil Philip Ilango — Computer Scientist</title>
+<meta name="description" content="Portfolio of Vivianahil Philip Ilango: AI systems, data generation, RAG pipelines, and full-stack software.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/skills.css">
+
+<!-- Runs before first paint so the saved theme doesn't flash -->
+<script src="js/theme.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+
+<header class="nav">
+  <a class="mark" href="#top">VIVIANAHIL PHILIP ILANGO / CS</a>
+
+  <div class="nav-right">
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <div class="theme-switcher" role="group" aria-label="Color theme">
+      <button class="theme-btn active" type="button" data-theme="light">LIGHT</button>
+      <button class="theme-btn" type="button" data-theme="dark">DARK</button>
+      <button class="theme-btn" type="button" data-theme="gloomy">GLOOMY</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- =========================
+     HERO
+========================= -->
+<section class="hero">
+
+  <div>
+    <p class="eyebrow">Computer Science / AI / Systems</p>
+
+    <h1>I build software that survives contact with reality.</h1>
+
+    <p class="lede">
+      Computer science student focused on <strong>AI systems, data generation,
+      RAG pipelines, and full-stack engineering.</strong>
+      I care about what happens after the prototype works:
+      reliability, architecture, data quality, and maintainability.
+    </p>
+
+    <div class="cta">
+      <a class="btn primary" href="#work">View engineering work</a>
+      <a class="btn" href="mailto:Vivianahil2004@gmail.com">Email me</a>
+    </div>
+  </div>
+
+  <aside class="terminal" aria-label="Technical profile">
+    <div class="terminal-head">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="terminal-title">profile.config</span>
+    </div>
+
+    <div class="terminal-body">
+      <div class="code-line">
+        <span class="code-num">01</span>
+        <span><span class="code-key">focus</span> = <span class="code-string">"AI systems"</span></span>
+      </div>
+      <div class="code-line">
+        <span class="code-num">02</span>
+        <span><span class="code-key">focus</span> += <span class="code-string">"data pipelines"</span></span>
+      </div>
+      <div class="code-line">
+        <span class="code-num">03</span>
+        <span><span class="code-key">focus</span> += <span class="code-string">"full-stack"</span></span>
+      </div>
+      <div class="code-line">
+        <span class="code-num">04</span>
+        <span><span class="code-key">databases</span> = <span class="code-string">"PostgreSQL"</span></span>
+      </div>
+      <div class="code-line">
+        <span class="code-num">05</span>
+        <span><span class="code-key">primary_language</span> = <span class="code-string">"Python"</span></span>
+      </div>
+      <div class="code-line">
+        <span class="code-num">06</span>
+        <span class="code-comment">// still debugging</span>
+      </div>
+
+      <div class="status">
+        <span class="status-label">SYSTEM STATUS</span>
+        <span class="status-value">● ONLINE</span>
+      </div>
+    </div>
+  </aside>
+
+</section>
+
+<!-- =========================
+     WORK
+========================= -->
+<section id="work">
+
+  <div class="section-heading">
+    <div class="section-number">01 / WORK</div>
+    <div>
+      <h2>Projects &amp; internships</h2>
+      <p class="intro">
+        Systems I've worked on across AI, data generation, full-stack
+        development, and software engineering. Internship projects marked
+        <span class="badge-nda" style="margin-left:0">NDA</span>
+        can't be shown in code, so they're described at a high level.
+      </p>
+    </div>
+  </div>
+
+  <!-- ============ BEE AURA (NDA) ============ -->
+  <article class="project" id="bee-aura">
+    <div class="project-main">
+
+      <div class="meta">
+        <b>AI Engineer Intern</b>
+        Bee Aura Tech<br>
+        May – Aug 2026<br>
+        Remote
+      </div>
+
+      <div class="project-content">
+
+        <h3>RAG ingestion pipeline redesign <span class="badge-nda">NDA</span></h3>
+
+        <p class="result">50% → 95%+ ingestion success</p>
+
+        <p class="nda-note">
+          <b>NDA PROJECT</b> — This work was done under a non-disclosure
+          agreement, so I can't share source code, screenshots, or internal
+          details. What's below is limited to what I'm able to discuss publicly.
+        </p>
+
+        <ul>
+          <li>
+            Traced recurring PostgreSQL connection timeouts behind
+            widespread ingestion failures.
+          </li>
+          <li>
+            Redesigned the pipeline so data is chunked before a database
+            connection is opened, then closes immediately after writing.
+          </li>
+          <li>
+            Deployed a local Qwen 7B model for OCR and visual data,
+            allowing image content to enter the RAG pipeline without
+            third-party vision APIs.
+          </li>
+          <li>
+            Debugged production data flows end to end, from connection
+            handling through retrieval quality.
+          </li>
+        </ul>
+
+        <ul class="tags">
+          <li>Python</li>
+          <li>PostgreSQL</li>
+          <li>RAG</li>
+          <li>Qwen 7B</li>
+          <li>OCR</li>
+        </ul>
+
+        <button class="details-toggle" type="button">Technical details</button>
+
+        <div class="project-details">
+          <div class="detail-grid">
+
+            <div class="detail-block">
+              <h4>Problem</h4>
+              <p>
+                Processing unstructured, multi-format media via traditional APIs
+                created latency bottlenecks and unstable transaction states when
+                storing long-lived, heavy computational outputs in relational databases.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Architecture change</h4>
+              <p>
+                Moved data preparation and vision-based structural mapping upstream
+                of the database layer. Local multi-model workers handle intensive
+                extraction tasks isolated from active connection pools, interacting
+                solely via ephemeral, stateless API endpoints.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>AI / Vision</h4>
+              <p>
+                Integrated vision-language patterns utilizing local inference models
+                to convert unstructured image arrays into strongly typed, schema-validated
+                JSON payload objects without relying on costly external third-party endpoints.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Engineering result</h4>
+              <p>
+                Resulted in a bulletproof backend orchestration pipeline capable of parsing
+                complex visual features and scaling processing efficiency while maintaining
+                continuous operational state safety.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <p class="project-links">
+          <span class="link-note">Source code: not available (NDA). The simulation below is an independent illustration.</span>
+        </p>
+
+      </div>
+    </div>
+  </article>
+
+  <!-- ============ DAAGS ============ -->
+  <article class="project" id="daags">
+    <div class="project-main">
+
+      <div class="meta">
+        <b>Team Lead &amp; System Architect</b>
+        University team project<br>
+        Jan – May 2026<br>
+        Mankato, MN
+      </div>
+
+      <div class="project-content">
+
+        <h3>DAAGS</h3>
+
+        <p class="result">AI-assisted synthetic data generation</p>
+
+        <p>
+          Data Analytics AI-Based Generation System — a synthetic data
+          generation platform designed to produce realistic and evolving
+          datasets for data analytics education.
+        </p>
+
+        <ul>
+          <li>Led a four-person development team and coordinated technical direction.</li>
+          <li>
+            Designed relational data structures for interconnected
+            employee, payroll, transaction, product, and supply-chain information.
+          </li>
+          <li>
+            Built generation workflows using weighted distributions,
+            reference datasets, CSV input, and PostgreSQL.
+          </li>
+          <li>
+            Integrated AI-assisted generation so natural-language
+            scenarios can modify generation parameters.
+          </li>
+        </ul>
+
+        <ul class="tags">
+          <li>Python</li>
+          <li>PostgreSQL</li>
+          <li>LLMs</li>
+          <li>Synthetic Data</li>
+          <li>System Design</li>
+          <li>Team Lead</li>
+        </ul>
+
+        <p class="project-links">
+          <a href="https://github.com/VivianLXVI/DAAGS-Data-Analytics-AI-Based-Generation-System-" target="_blank" rel="noopener">View on GitHub ↗</a>
+        </p>
+
+        <button class="details-toggle" type="button">Technical details</button>
+
+        <div class="project-details">
+          <div class="detail-grid">
+
+            <div class="detail-block">
+              <h4>System purpose</h4>
+              <p>
+                DAAGS addresses a limitation of static public datasets in
+                data analytics education by generating unique datasets
+                that can change over time and respond to scenarios.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Generation pipeline</h4>
+              <p>
+                Existing datasets such as product data are used as
+                references. Python generation logic combines those
+                references with configurable weighted distributions to
+                create new transactional records.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Current transaction model</h4>
+              <p>
+                Generated transaction records include transaction number,
+                user ID, state, item count, product IDs, total amount,
+                payment method, and timestamps.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Weighted generation</h4>
+              <p>
+                Regional and state behavior is represented through
+                configurable weights. These distributions influence
+                fields such as item counts, payment methods, and other
+                generated behavior.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>AI-assisted generation</h4>
+              <p>
+                Users can describe scenarios in natural language.
+                The AI interprets the scenario and modifies generation
+                weights rather than generating every record directly.
+                This reduces the amount of LLM generation required.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Database architecture</h4>
+              <p>
+                PostgreSQL provides relational storage and transactional
+                integrity. The architecture leaves room for indexing,
+                scheduled generation, triggers, and deeper database
+                integration as the project evolves.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Universal input direction</h4>
+              <p>
+                A major future direction is generic CSV input: analyzing
+                columns, distributions, numerical patterns, and
+                categorical frequencies instead of assuming a fixed
+                retail schema.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Hardest technical problem</h4>
+              <p>
+                Column dependencies. Generating columns independently
+                can create impossible relationships. Future work
+                includes conditional distributions and dependency-aware
+                generation.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Evolving data</h4>
+              <p>
+                The intended next stage is scheduled generation where
+                datasets evolve over simulated time, including events,
+                anomalies, peaks, valleys, and scenario-based changes.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Research finding</h4>
+              <p>
+                In one experiment, an AI-assisted scenario simulating a
+                pandemic reduced overall sales in generated data by
+                approximately 46% compared with the default configuration.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+
+  <!-- ============ TEACHTRACK ============ -->
+  <article class="project" id="teachtrack">
+    <div class="project-main">
+
+      <div class="meta">
+        <b>Testing Lead</b>
+        University team project<br>
+        Team of 4<br>
+        Aug – Dec 2025<br>
+        Mankato, MN
+      </div>
+
+      <div class="project-content">
+
+        <h3>TeachTrack</h3>
+
+        <p class="result">Live platform for special-education teacher reflections</p>
+
+        <p>
+          A web application that replaced a Google Sheets workflow for student
+          teachers submitting weekly reflections on High-Leverage Practices (HLPs).
+          Supervisors review each reflection, leave comments, and approve it or
+          request revisions. Built for a Special Education faculty client at
+          Minnesota State University, Mankato.
+        </p>
+
+        <ul>
+          <li>
+            Wrote the testing plan and Testing Guide, covering login, role
+            permissions, reflection flows, user invitations, and supervisor
+            feedback.
+          </li>
+          <li>
+            Joined a four-person team that took over a working Django/React
+            codebase and got it ready for real users: UI cleanup, bug fixes,
+            environment settings, and a library of HLP learning resources.
+          </li>
+          <li>
+            Helped deploy the system to Render with a custom domain, then
+            tested the live site and fixed layout, responsiveness, and
+            workflow issues that only appeared in production.
+          </li>
+          <li>
+            Contributed to the handover documentation so the next team can
+            run, test, and extend the project.
+          </li>
+        </ul>
+
+        <ul class="tags">
+          <li>Django</li>
+          <li>Django REST Framework</li>
+          <li>React</li>
+          <li>Vite</li>
+          <li>Tailwind</li>
+          <li>PostgreSQL</li>
+          <li>Render</li>
+          <li>Testing</li>
+        </ul>
+
+        <p class="project-links">
+          <a href="https://myhlptracker.com" target="_blank" rel="noopener">Live site ↗</a>
+          <span class="link-note">Source code is private (owned by the client).</span>
+        </p>
+
+        <button class="details-toggle" type="button">Technical details</button>
+
+        <div class="project-details">
+          <div class="detail-grid">
+
+            <div class="detail-block">
+              <h4>Problem</h4>
+              <p>
+                Reflections were collected in Google Sheets, which made
+                organization, progress tracking, supervisor feedback, and
+                long-term use difficult.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Role-based access</h4>
+              <p>
+                Four user levels, each seeing only what they need:
+                Superuser (creates organizations), Administrator (manages
+                supervisors), Supervisor (runs classes and reviews
+                reflections), and Student Teacher (submits and revises
+                reflections). Email verification and password reset are built in.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>My role: testing</h4>
+              <p>
+                As Testing Lead, I built a structured test plan and guide so
+                every role and workflow could be checked the same way
+                before and after release. Testing covered login, permissions,
+                reflection submission and revision, invitations, and feedback.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Inherited architecture</h4>
+              <p>
+                The previous team delivered the core architecture, database
+                design, APIs, and reflection workflows. Our team chose to keep
+                that stack rather than rebuild it, and focused on stability,
+                deployment, and usability.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Stack</h4>
+              <p>
+                Django and Django REST Framework backend; React (JSX), Vite,
+                and Tailwind frontend; Axios with JWT authentication;
+                PostgreSQL on Render.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Deployment</h4>
+              <p>
+                Backend and frontend deployed on Render, with automatic
+                redeploys from GitHub and a custom domain connected through
+                DNS configuration.
+              </p>
+            </div>
+
+            <div class="detail-block wide">
+              <h4>What we learned</h4>
+              <ul>
+                <li>Confirm hosting and domain funding early. A funding delay pushed deployment back.</li>
+                <li>Set firm deadlines with testers. Feedback arrived slower than planned.</li>
+                <li>Plan extra time after launch. Several issues only showed up on the live site.</li>
+                <li>Read the previous team's documentation before changing inherited architecture.</li>
+              </ul>
+            </div>
+
+            <div class="detail-block wide">
+              <h4>Risks documented for future teams</h4>
+              <p>
+                Yearly domain renewal, hosting and database scaling as usage
+                grows, dependency updates (Django, React, Vite, Axios,
+                Tailwind), and possible new client requests such as analytics
+                dashboards or a mobile app.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+
+  <!-- ============ WIZARD BOARD ============ -->
+  <article class="project" id="wizard-board">
+    <div class="project-main">
+
+      <div class="meta">
+        <b>Frontend Lead</b>
+        University team project<br>
+        Team of 4<br>
+        Jan – May 2025<br>
+        Mankato, MN
+      </div>
+
+      <div class="project-content">
+
+        <h3>Wizard Board</h3>
+
+        <p class="result">Soccer recruiting dashboard with AI email parsing</p>
+
+        <p>
+          A recruiting tool for collegiate soccer coaches. Coaches forward
+          emails from recruits to a shared inbox, a parser pulls out the key
+          details, and the coach sees every recruit in a dashboard they can
+          rank, sort, and filter. Built for a MNSU soccer coach, with the
+          client planning to take it to market.
+        </p>
+
+        <ul>
+          <li>
+            Led frontend development for coaches and recruiters, working
+            with a backend lead, an AI and testing lead, and a team lead.
+          </li>
+          <li>
+            Converted stakeholder requirements into React interfaces
+            designed around athlete evaluation workflows.
+          </li>
+          <li>
+            Team shipped email parsing every 10 minutes (down from every
+            24 hours), a calendar, a two-way email system, an iOS-friendly
+            Progressive Web App, and an improved login flow with password reset.
+          </li>
+        </ul>
+
+        <ul class="tags">
+          <li>React</li>
+          <li>JavaScript</li>
+          <li>Axios</li>
+          <li>Flask</li>
+          <li>PostgreSQL</li>
+          <li>AWS Lambda</li>
+          <li>OpenAI API</li>
+          <li>Docker</li>
+        </ul>
+
+        <p class="project-links">
+          <a href="https://talenttrack-frontend.onrender.com" target="_blank" rel="noopener">Live demo ↗</a>
+          <span class="link-note">Hosted on a free tier — the first load can take up to ~50 seconds.</span>
+        </p>
+
+        <button class="details-toggle" type="button">Technical details</button>
+
+        <div class="project-details">
+          <div class="detail-grid">
+
+            <div class="detail-block">
+              <h4>Problem</h4>
+              <p>
+                Coaches receive long, unstructured emails from recruits and
+                had to copy the details into a spreadsheet by hand. The goal
+                was to automate that step and keep every recruit in one
+                sortable place.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Data flow</h4>
+              <p>
+                Coach forwards email → scheduled AWS Lambda job
+                (Amazon EventBridge, every 10 minutes) reads the inbox via
+                the Gmail API → GPT-3.5 Turbo extracts structured player
+                data → records are inserted into PostgreSQL on AWS RDS →
+                Flask API → React dashboard. Each coach only sees emails
+                forwarded from their own account.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>My role: frontend</h4>
+              <p>
+                Turned client requirements into the React interface:
+                dashboard, player table, sidebar and navigation components,
+                and the signup, login, and landing pages. Data reaches the
+                UI through Axios calls to the Flask REST endpoints.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Authentication</h4>
+              <p>
+                Passwords are salted and hashed with bcrypt before storage.
+                A forgot-password flow sends a reset link through SendGrid
+                to a page where the user sets a new password.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Backend &amp; infrastructure</h4>
+              <p>
+                Flask with SQLAlchemy, Docker Compose for local development,
+                and Render for hosting the frontend and backend, with
+                automatic redeploys from the deployment branch.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h4>What the team delivered</h4>
+              <ul>
+                <li>Requirements analysis document</li>
+                <li>Calendar for recruit schedules</li>
+                <li>Two-way email recruiting system</li>
+                <li>iOS support via a PWA</li>
+                <li>Login fixes (duplicate accounts) and password reset</li>
+              </ul>
+            </div>
+
+            <div class="detail-block wide">
+              <h4>Known limitations &amp; what I'd do next</h4>
+              <ul>
+                <li>No manual "parse now" button, so coaches wait up to 10 minutes for new recruits to appear.</li>
+                <li>Some emails get parsed more than once, creating duplicate players. The parser needs duplicate detection.</li>
+                <li>One shared inbox for all coaches is a bottleneck at scale. Splitting into multiple inboxes would fix it.</li>
+                <li>The athlete page was built but never connected to login or roles, due to a client-requested pause.</li>
+                <li>Backend unit tests were not passing at the end of the semester, and formal user testing was not done.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+
+  <!-- ============ CHAIN-SYS (NDA) ============ -->
+  <article class="project" id="chain-sys">
+    <div class="project-main">
+
+      <div class="meta">
+        <b>Software Engineering Intern</b>
+        Chain-Sys<br>
+        Jun – Aug 2024<br>
+        Remote
+      </div>
+
+      <div class="project-content">
+
+        <h3>Document conversion system <span class="badge-nda">NDA</span></h3>
+
+        <p class="result">DOCX / XLSX / HTML → standardized PDF</p>
+
+        <p class="nda-note">
+          <b>NDA PROJECT</b> — This work was done under a non-disclosure
+          agreement, so I can't share source code, screenshots, or internal
+          details. What's below is limited to what I'm able to discuss publicly.
+        </p>
+
+        <ul>
+          <li>Added validation and error handling to improve conversion reliability.</li>
+          <li>Optimized batch processing for larger workloads.</li>
+          <li>Reduced reliance on third-party conversion tools.</li>
+        </ul>
+
+        <ul class="tags">
+          <li>Python</li>
+          <li>Document Processing</li>
+          <li>Batch Systems</li>
+          <li>Validation</li>
+        </ul>
+
+        <button class="details-toggle" type="button">Technical details</button>
+
+        <div class="project-details">
+          <div class="detail-grid">
+
+            <div class="detail-block">
+              <h4>Input</h4>
+              <p>Supported document formats included DOCX, XLSX, and HTML.</p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Output</h4>
+              <p>Documents were normalized into PDF output while maintaining formatting.</p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Reliability</h4>
+              <p>Validation and error handling were added around the conversion workflow.</p>
+            </div>
+
+            <div class="detail-block">
+              <h4>Performance</h4>
+              <p>
+                Batch processing was optimized to make the system more
+                practical for larger conversion workloads.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <p class="project-links">
+          <span class="link-note">Source code: not available (NDA).</span>
+        </p>
+
+      </div>
+    </div>
+  </article>
+
+</section>
+
+<!-- =========================
+     ENGINEERING DEMO
+========================= -->
+<section class="demo-section" id="demo">
+
+  <div class="section-heading">
+    <div class="section-number">02 / DEMO</div>
+    <div>
+      <h2>Show, don't tell.</h2>
+      <p class="intro">
+        Since the Bee Aura code is under NDA, here's a simplified,
+        independently built visualization of the database connection
+        problem I worked on there.
+      </p>
+    </div>
+  </div>
+
+  <div class="demo">
+
+    <div class="demo-copy">
+      <span class="demo-label">Pipeline simulation</span>
+      <h3>Connection lifetime matters.</h3>
+      <p>
+        The original pattern held a database connection while data
+        was being prepared. The redesigned pattern prepares the data
+        first and opens the connection only when it needs to write.
+      </p>
+      <p>
+        This is an illustrative simulation, not production telemetry
+        or NDA code.
+      </p>
+    </div>
+
+    <div>
+      <div class="seg">
+        <button id="mode-before" type="button" aria-pressed="true">Connect → chunk</button>
+        <button id="mode-after" type="button" aria-pressed="false">Chunk → connect</button>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-row">
+          <span>Chunking</span>
+          <div class="bar"><i id="bar-chunk"></i></div>
+        </div>
+        <div class="timeline-row">
+          <span>DB connection</span>
+          <div class="bar"><i id="bar-conn"></i></div>
+        </div>
+      </div>
+
+      <div class="batch-grid" id="batch-grid" aria-hidden="true"></div>
+
+      <div class="readout" aria-live="polite">
+        <div class="rate" id="rate">—</div>
+        <div class="note" id="note">Run the simulation to compare the two designs.</div>
+      </div>
+
+      <button type="button" class="btn primary demo-run" id="run">Run 20 batches</button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     SKILLS
+========================= -->
+<section id="skills">
+
+  <div class="section-heading">
+    <div class="section-number">03 / SKILLS</div>
+    <div>
+      <h2>Technical stack</h2>
+      <p class="intro">
+        Technologies I've used across coursework, internships,
+        research projects, and team development.
+      </p>
+    </div>
+  </div>
+
+  <div class="two">
+
+    <div class="skills-list">
+      <div class="skill-row">
+        <b>LANGUAGES</b>
+        <span>Python · Java · C · JavaScript · HTML/CSS</span>
+      </div>
+      <div class="skill-row">
+        <b>FRAMEWORKS / TOOLS</b>
+        <span>React · Django · Flask · Docker · Git · PostgreSQL</span>
+      </div>
+      <div class="skill-row">
+        <b>CLOUD / DEPLOYMENT</b>
+        <span>AWS (Lambda, RDS, S3) · Render · Docker Compose</span>
+      </div>
+      <div class="skill-row">
+        <b>AI / DATA</b>
+        <span>
+          RAG · LLM integration · synthetic data generation ·
+          OCR · weighted generation · data pipelines
+        </span>
+      </div>
+      <div class="skill-row">
+        <b>ENGINEERING</b>
+        <span>
+          System architecture · relational databases ·
+          test planning · containerization · full-stack development
+        </span>
+      </div>
+    </div>
+
+    <div class="facts">
+      <div class="fact">
+        <b>B.S. Computer Science / Math minor</b>
+        <span>Minnesota State University, Mankato · Expected Spring 2027 · GPA 3.5</span>
+      </div>
+      <div class="fact">
+        <b>Dean's List</b>
+        <span>Fall 2022 · Fall 2023 · Spring 2026</span>
+      </div>
+      <div class="fact">
+        <b>Licensed Life Insurance Producer</b>
+        <span>State of Minnesota · Since August 2022</span>
+      </div>
+      <div class="fact">
+        <b>Teaching experience</b>
+        <span>
+          Taught children ages 2–6 at Little Newtons Daycare,
+          developing communication and explanation skills.
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     CONTACT
+========================= -->
+<section id="contact" class="contact">
+
+  <div class="contact-content">
+
+    <div>
+      <div class="section-number">04 / CONTACT</div>
+      <h2>Interested in building something?</h2>
+      <p>I'm looking for software engineering and AI/ML opportunities.</p>
+    </div>
+
+    <div class="contact-links">
+      <a class="btn primary" href="mailto:Vivianahil2004@gmail.com">Email</a>
+      <a class="btn" href="https://linkedin.com/in/vivianahillxvi" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/VivianLXVI?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 Vivianahil Philip Ilango</span>
+  <span>Built with HTML, CSS, and JavaScript</span>
+</footer>
+
+</div>
+
+<script src="js/details.js" defer></script>
+<script src="js/demo.js" defer></script>
+</body>
+</html>
