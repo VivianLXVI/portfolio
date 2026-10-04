@@ -2,7 +2,7 @@
 
 The source code for my personal developer portfolio website. This site acts as a performance-driven engineering hub showcasing my work across AI systems, data generation, and full-stack engineering.
 
-🔗 **Live Link:** [https://YOUR_SUBDOMAIN.vercel.app](https://YOUR_SUBDOMAIN.vercel.app)
+🔗 **Live Link:** [https://portfolio-eta-sage-18.vercel.app](https://portfolio-eta-sage-18.vercel.app)
 
 ## 🚀 Performance & Design Architecture
 * **Stack:** Pure semantic HTML5, modular CSS3, and vanilla asynchronous JavaScript (ES6+).
