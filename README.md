@@ -1,4 +1,4 @@
-# Vivianahil Philip Ilango Portfolio Website
+# Vivianahil Philip Ilango - Portfolio Website
 
 The source code for my personal developer portfolio website. This site acts as a performance-driven engineering hub showcasing my work across AI systems, data generation, and full-stack engineering.
 
